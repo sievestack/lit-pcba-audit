@@ -1,7 +1,7 @@
 # LIT-PCBA Audit
 
 This repository contains scripts and curated data to reproduce the audit of the LIT-PCBA benchmark, as detailed in our paper:  
-*“Data Leakage and Redundancy in the LIT-PCBA Benchmark Dataset.”*
+[*“Data Leakage and Redundancy in the LIT-PCBA Benchmark Dataset”*](https://arxiv.org/abs/2507.21404).
 
 ## Overview
 
