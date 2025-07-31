@@ -41,6 +41,18 @@ These flaws enable models to appear highly performant through memorization rathe
 
 ## Citation
 
-If you use the scripts or data, please cite our work.  
+If you use the scripts or data, please cite our work:
+
+```bibtex
+@misc{huang2025dataleakageredundancylitpcba,
+      title={Data Leakage and Redundancy in the LIT-PCBA Benchmark}, 
+      author={Amber Huang and Ian Scott Knight and Slava Naprienko},
+      year={2025},
+      eprint={2507.21404},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2507.21404}, 
+}
+```
 
 Repository: https://github.com/sievestack/LIT-PCBA-audit
