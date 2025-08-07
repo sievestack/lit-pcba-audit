@@ -7,6 +7,8 @@ This repository contains scripts and curated data to reproduce the audit of the 
 
 The LIT-PCBA benchmark is widely used for evaluating virtual screening models. However, our audit reveals fundamental data integrity failures that invalidate its use for fair model evaluation.
 
+A simple, parameter-free baseline highlights the sensitivity of LIT-PCBA to overlap between splits. The model ranks each test molecule by the maximum 2D ECFP4 similarity to the **training actives** and, with no learned weights, reaches a median raw EF1% of 4.15 -- essentially the same value reported for recent 3D encoders. Extending the baseline to include the benchmark’s **query ligands** as additional references (by averaging the two similarity scores) raises the mean raw EF1% from 4.35 to 5.83. The ease with which such minimal heuristics match or exceed more complex methods suggests that LIT-PCBA can reward memorization rather than genuine generalization, and that reported gains should be interpreted with caution.
+
 Key issues identified include:
 
 - **Inter-set Identity Leakage:** Identical molecules duplicated across supposedly disjoint sets.  
